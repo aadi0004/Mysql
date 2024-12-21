@@ -10,6 +10,7 @@ CREATE TABLE ORDERS(OID int, CITY varchar(20),PRODUCT_ID INT);
 INSERT INTO ORDERS VALUES (101,"JAIPUR",10),(101,"GOA",20),(103,"UK",30),(104,"SHIMLA",40),(105,"KERALA",80);
 
 SELECT * FROM ORDERS;
+-- joins are used to combine data from two tables
 
 -- all cross join will be m number of data on table 1 and n number of data in table 2 then this will be m * n 
 
