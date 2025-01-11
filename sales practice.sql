@@ -1,5 +1,6 @@
 create database sales;
 use sales;
+
 select * from sales_c;
 alter table sales_c modify sales_date date;
 
@@ -47,6 +48,7 @@ select count(distinct(customer_id)) from sales_c
 where categoryProduct='Beauty' and categoryProduct='Clothing' and categoryProduct='Electronics'
 -- group by customer_id;
 ;
+
 select count(distinct(customer_id)) as customer,categoryProduct from sales_c group by categoryProduct;
 
 
