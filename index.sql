@@ -12,10 +12,12 @@ INSERT INTO employees VALUES
     (2, 'Jane', 'Doe', 'DEF456', 65000),
     (3, 'Bob', 'Johnson', 'GHI789', 70000),
     (4, 'Sally', 'Fields', 'JKL012', 75000),
+    
     (5, 'Michael', 'Smith', 'MNO345', 80000),
     (6, 'Emily', 'Jones', 'PQR678', 85000),
     (7, 'David', 'Williams', 'STU901', 90000),
     (8, 'Sarah', 'Johnson', 'VWX234', 95000),
+    
     (9, 'James', 'Brown', 'YZA567', 100000),
     (10, 'Emma', 'Miller', 'BCD890', 105000),
     (11, 'William', 'Davis', 'EFG123', 110000),
@@ -46,7 +48,10 @@ drop index emp_sal on employees;
 create index emp_sal_f on employees(salary,first_name);
 
 
+
+
 explain select * from employees where salary < 90000;
 explain select * from employees where salary= 900000 and first_name = 'james'
 
 -- what is the diff b/w clustred index and non clustred index
+
