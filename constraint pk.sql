@@ -10,6 +10,7 @@ select * from product;
 create table orders(oid int , city varchar(20), product_id int ,
 foreign key (product_id) references product(pid));
 
+
 insert into orders(oid,city,product_id) values(10,'jaipur',200),
 (11,'delhi',201),(13,'ajmer',203);
 
@@ -24,11 +25,13 @@ select * from orders;
             
 -- create , drop, truncate , alter
 
+
 create table asd(id int , name varchar(20));
 insert into asd values (20,'aadi');
 insert into asd(name) values ('aadi');
 select * from asd;
 -- insert DML operation
+
 
  -- updating column value
 update asd set name = 'xyz' where id = 10;
