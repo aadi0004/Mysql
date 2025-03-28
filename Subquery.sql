@@ -9,6 +9,7 @@ select customer_id,sum(amount) as "total_amount"  from payment
 group by customer_id order by total_amount desc;
 
 
+
 -- subqueries
 
 select * from payment where amount=(select amount from payment where payment_id=3
